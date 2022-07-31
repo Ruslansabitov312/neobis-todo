@@ -8,6 +8,7 @@ function TodoList() {
   // Добавить туду
   const addTodo = (todo) => {
     if (!todo.text || /ˆ\s*/.test(todo.text)) {
+      alert('Please, enter correct information!')
       return
     }
 
@@ -19,6 +20,7 @@ function TodoList() {
   // Изменить туду
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /ˆ\s*/.test(newValue.text)) {
+      alert('Please, enter correct information!')
       return
     }
 
@@ -46,8 +48,8 @@ function TodoList() {
   }
 
   return (
-    <div>
-      <h1>What's the plan for today?</h1>
+    <div className='todo-list'>
+      <h1 className='todo-list__title'>What's the plan for today?</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

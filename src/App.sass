@@ -1,0 +1,88 @@
+// Базовые стили
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+body
+  background: #374151
+
+// Тудушка(эппЖс)
+.todo-app
+  display: flex
+  flex-direction: column
+  justify-content: start
+  width: 620px
+  min-height: 600px
+  background: #8e99c8
+  text-align: center
+  margin: 128px auto
+  border-radius: 10px
+  padding-bottom: 32px
+
+// Туду лист
+.todo-list__title
+  margin: 32px 0
+  color: #c9e6eb
+  font-size: 24px
+  
+// Туду форма
+.todo-form
+  margin-bottom: 32px
+  &__input
+    padding: 14px 32px 14px 16px
+    border-radius: 4px 0 0 4px
+    border: 2px solid #c9e6eb
+    outline: none
+    width: 320px
+    background: transparent
+    color: #fff
+    &::placeholder
+      color: #e2e2e2
+    &.edit
+      border: 2px solid #dbc7d9
+  &__btn
+    padding: 16px
+    border: none
+    border-radius: 0 4px 4px 0
+    cursor: pointer
+    outline: none
+    background: #c9e6eb
+    color: #8e99c8
+    text-transform: capitalize
+    &.edit
+      background: #dbc7d9
+      padding: 16px 22px
+
+// Туду
+.todo-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 4px auto
+  color: #fff
+  background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%)
+  padding: 16px
+  border-radius: 5px
+  width: 90%
+  &:nth-child(4n + 1)
+    background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%)
+  &:nth-child(4n + 2)
+    background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%)
+  &:nth-child(4n + 3)
+    background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%)
+.complete
+  text-decoration: line-through
+  opacity: 0.4
+
+// Иконки
+.icons
+  display: flex
+  align-items: center
+  font-size: 24px
+  cursor: pointer
+.delete-icon
+  margin-right: 5px
+  color: #fff
+.edit-icon
+  color: #fff
