@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/neobis-todo/static/css/main.f0adfb0e.css",
+    "main.js": "/neobis-todo/static/js/main.7113774d.js",
+    "index.html": "/neobis-todo/index.html",
+    "main.f0adfb0e.css.map": "/neobis-todo/static/css/main.f0adfb0e.css.map",
+    "main.7113774d.js.map": "/neobis-todo/static/js/main.7113774d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0adfb0e.css",
+    "static/js/main.7113774d.js"
+  ]
+}
